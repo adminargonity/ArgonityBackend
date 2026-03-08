@@ -3,9 +3,7 @@ const Anthropic = require("@anthropic-ai/sdk");
 const axios = require("axios");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-const Groq = require("groq-sdk"); // New Groq Import
 const fs = require("fs"); // Built-in Node file system
-const PDFParser = require("pdf2json");
 const path = require("path");
 require("dotenv").config();
 
@@ -15,8 +13,6 @@ app.use(cors());
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
-// Initialize Groq with your new key
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Configure Email (Existing)
 const transporter = nodemailer.createTransport({
