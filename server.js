@@ -140,7 +140,10 @@ app.post("/api/chat", async (req, res) => {
   //     return res.status(200).json({ reply: aiResponse });
   //   } catch (groqError) {
   //     console.log("Groq Failed, switching to OpenRouter Fallback...");
-
+app.
+  get('/', (req, res) => {
+  res.send("Argonity Server is Online!");
+});
   try {
     // --- TRY 2: OPENROUTER (Claude via Bridge) ---
 
