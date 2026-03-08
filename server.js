@@ -57,8 +57,13 @@ const companyContext = JSON.stringify(jsonData);
 //     }
 //   });
 // }
+// Add this so the main URL works
 app.get("/", (req, res) => {
-  res.status(200).send("Argonity API is Live and Running!");
+  res.status(200).json({
+    status: "Online",
+    message: "Argonity Backend is running on Vercel",
+    endpoints: ["/api/chat", "/api/contact"]
+  });
 });
 /**
  * Endpoint: AI Chat with PDF Knowledge
