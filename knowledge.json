@@ -1,0 +1,88 @@
+{
+  "company_info": {
+    "name": "Argonity",
+    "tagline": "Engineering Digital Excellence.",
+    "mission": "Transform complex business challenges into seamless digital experiences.",
+    "specialties": ["Web", "Mobile", "Desktop", "Real-time Systems"],
+    "tech_stack": {
+      "web": ["MERN", "Laravel", "Node.js", "React", "Next.js"],
+      "mobile": ["Flutter", "React Native", "Supabase", "Firebase"],
+      "desktop": ["C#", ".NET", "ASP.NET Core", "SQLite"]
+    }
+  },
+  "pricing": {
+    "web": [
+      {
+        "type": "Landing Page",
+        "price_usd": "250-600",
+        "price_mmk": "5-15 Lakhs"
+      },
+      {
+        "type": "Basic Web App",
+        "price_usd": "600-1,800",
+        "price_mmk": "15-40 Lakhs"
+      },
+      {
+        "type": "Full MERN Platform",
+        "price_usd": "2,000-5,000+",
+        "price_mmk": "45-120 Lakhs"
+      },
+      {
+        "type": "E-commerce",
+        "price_usd": "2,500-7,000+",
+        "price_mmk": "60-150 Lakhs"
+      }
+    ],
+    "mobile": [
+      {
+        "type": "App MVP",
+        "price_usd": "1,200-2,500",
+        "price_mmk": "30-60 Lakhs"
+      },
+      {
+        "type": "Standard App",
+        "price_usd": "3,000-8,000",
+        "price_mmk": "65-180 Lakhs"
+      },
+      {
+        "type": "Complex App",
+        "price_usd": "10,000+",
+        "price_mmk": "200+ Lakhs"
+      }
+    ],
+    "desktop": [
+      {
+        "type": "Internal Utility",
+        "price_usd": "600-1,300",
+        "price_mmk": "15-30 Lakhs"
+      },
+      {
+        "type": "Enterprise ERP/CRM",
+        "price_usd": "3,500-11,000",
+        "price_mmk": "80-250 Lakhs"
+      }
+    ],
+    "hourly_rates": {
+      "support": "$15-$25",
+      "senior_dev": "$30-$55",
+      "consulting": "$60+"
+    }
+  },
+  "portfolio_samples": [
+    {
+      "name": "Daisy Chat",
+      "stack": "Flutter/Supabase",
+      "desc": "Real-time messaging with encryption."
+    },
+    {
+      "name": "LaraCommerce",
+      "stack": "Laravel",
+      "desc": "E-commerce engine with payment gateways."
+    },
+    {
+      "name": "AutoBill POS",
+      "stack": "C#/.NET",
+      "desc": "Offline Windows billing software."
+    }
+  ]
+}
