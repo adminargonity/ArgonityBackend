@@ -238,5 +238,15 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Argonity Server running on port ${PORT}`));
+// At the bottom of server.js
+const port = process.env.PORT || 3000;
+
+// Only start the server if we are running locally (XAMPP/Windows)
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
+}
+
+// ALWAYS export the app for Vercel
+module.exports = app;
